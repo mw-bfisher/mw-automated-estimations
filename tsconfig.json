@@ -15,5 +15,8 @@
       "@mw-auction-dynamics/*": ["packages/*/src"]
     }
   },
-  "exclude": ["node_modules", "**/node_modules", "dist", "**/dist"]
+  "exclude": ["node_modules", "**/node_modules", "dist", "**/dist"],
+  "references": [
+    { "path": "./packages/*" }
+  ]
 }

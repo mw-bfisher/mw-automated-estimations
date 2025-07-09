@@ -6,7 +6,7 @@
   ],
   "scripts": {
     "start": "lerna run start --stream",
-    "build": "lerna run build --stream",
+    "build": "npm run build --workspaces",
     "test": "lerna run test --stream",
     "lint": "lerna run lint --stream"
   },
