@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",                  // Where to put compiled JS/DTS files for this package
+    "rootDir": "src",                  // Where source files for this package live
+    "composite": true,                 // Enable for TypeScript Project References (explained next)
+    "declaration": true,               // Generate .d.ts files for this package
+    "tsBuildInfoFile": "./.tsbuildinfo" // Improves incremental builds
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"],
+  "references": [{
+    "path": "../jira-adapter"
+  }]
+}

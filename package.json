@@ -1,0 +1,19 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream",
+    "lint": "lerna run lint --stream"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.12",
+    "lerna": "^8.2.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}

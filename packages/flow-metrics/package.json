@@ -1,0 +1,33 @@
+{
+  "name": "@mw-auction-dynamics/flow-metrics",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mw-bfisher/mw-automated-estimations.git"
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean:build": "rm -rf dist .tsbuildinfo",
+    "test": "node ./__tests__/flow-metrics.test.js"
+  },
+  "dependencies": {
+    "@mw-auction-dynamics/jira-adapter": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/mw-bfisher/mw-automated-estimations/issues"
+  }
+}

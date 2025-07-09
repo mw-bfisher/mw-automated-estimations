@@ -1,0 +1,10 @@
+# IntelliJ
+.idea/
+
+# Node.JS
+node_modules/
+
+# Typescript
+*.tsbuildinfo
+.tsbuildinfo
+**/dist/
